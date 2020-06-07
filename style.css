@@ -1,0 +1,210 @@
+/* Purva Jani */
+
+body {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    padding: 50px;
+    font-family: Bahnschrift Light;
+    background-color: black;
+    color: white;
+    text-align: left;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(195, 195, 195)
+}
+
+a:visited {
+    color: rgb(195, 195, 195);
+}
+
+a:hover {
+    color: rgb(210, 210, 210);
+    text-decoration: underline;
+}
+
+hr {
+    width: 60px;
+}
+
+/* classes */
+
+.heading {
+    font-family: Bahnschrift Light;
+    text-align: center;
+    color: white;
+    margin: 6px;
+}
+
+.above {
+    font-family: Bahnschrift Light;
+    text-align: center;
+    color: white;
+    margin: 6px;
+    padding-bottom: 15px;
+}
+
+.below {
+    font-family: Bahnschrift Light;
+    text-align: center;
+    color: white;
+    margin: 6px;
+    padding-top: 15px;
+}
+
+.pic {
+    float: right;
+    height: 225px;
+    border-width: medium;
+    border-style: dotted;
+    margin-right: 50px;
+    padding: 10px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 15% 15%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 240px;
+}
+
+/* modal */
+
+.modal-open {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Bahnschrift Light;
+    transition-duration: all 0.5s;
+}
+
+.modal-open:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.modal-open span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.modal-open span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.modal-open:hover span {
+    padding-right: 25px;
+}
+
+.modal-open:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    animation: modal-open .5s;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 4;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes modal-open {
+  from {
+    opacity:0
+}
+  to {
+    opacity:1z}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-header {
+    padding: 20px 16px;
+    background-color: rgba(27, 31, 54, 0.3);
+    font-size: 30px;
+    color: white;
+}
+
+.modal-header .modal-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0)
+}
+
+.modal-header .modal-close:hover {
+    color: rgb(212, 212, 212)
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
