@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<!--Created by Purva Jani-->
+
+<html lang = "en">
+  
+  <head>
+      
+    <title>Javacript</title>
+      
+    <link rel = "stylesheet" href = "JS-Notes.css">
+      
+  </head>
+  
+  <body>
+            
+    <h1 class = "heading">JAVASCRIPT</h1>
+    <h3 class = "above">NOTES</h1>
+      
+    <hr>
+              
+    <p class = "below">Javascript is a computer programming language that enables you to design interactive web pages</p>
+    <p class = "above">The modals below each have different information on the coding language!</p>
+    <p class = "heading"><a href = "https://www.udemy.com/course/javascript-essentials/" target = "_blank">Udemy Course</a></p>  
+    <p class = "heading above"><a href = "https://docs.google.com/document/d/1DsvZfjuIy1RdK2bs2lJRMwTPuGyjk4M-Ksy0FNxq2rE/edit?usp=sharing" target = "_blank">Google Drive JS Notes</a></p>
+      
+<!-- Modal Buttons -->
+
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal1"><span>Introduction</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal2"><span>Console</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal3"><span>Strings & Arrays</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal4"><span>Variables</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal5"><span>Operators</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal6"><span>Coding</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal7"><span>Functions</span></button>
+    <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal8"><span>Objects & Arrays</span></button>
+
+<!-- Modals -->
+
+<!-- Introduction -->
+
+    <div class = "modal" id = "modal1">
+        <div class = "modal-content">
+            <div class = "modal-header">INTRODUCTION
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+                
+                <p> <em>Javascript</em> is a computer programming language that enables you to design interactive web pages.
+                    </br> It was created by Brenden Eich in 1995
+                    and may also be referred to as:</p>
+
+                <ul>
+                    <li>LiveScript</li> 
+                    <li>Mocha</li>
+                    <li>ECMAScript</li>
+                    <li>JScript</li>
+                 </ul>
+                
+                <pre>Syntax:
+                    <code>
+    var x = 10;
+    var y = 30;
+    
+    function add( arg1, arg2 ) {
+        return arg1 + arg2;
+    }
+    add( x, y);
+                    </code>
+                </pre>
+                <pre>Log to Console:
+                    <code>
+    var num = 10;
+    console.log( "string", 10.11, true, false, null, num );</code>
+                </pre>
+
+                <p> **Javascript is different from Java </br></br>Rendering Engine:
+                    </br>The DOM parser converts the HTML code into a structured page
+                    </br>The CSS parser ensures that the document layout is rendered correctly</p>
+
+                <p> JIT ( Just In Time ) Compiler:
+                    </br>Converts intelligible language into machine code</p>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- Console -->
+
+    <div class = "modal" id = "modal2">
+        <div class = "modal-content">
+            <div class = "modal-header">CONSOLE
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+                
+                 <p> A <em>console</em> is a simple text interface.</br></br>To open a console on <em>Google Chrome</em> or <em>Firefox:</em></p>
+
+                <ul>
+                    <li>Press "F12" on the keypad</li>
+                </ul>
+
+                <p> Or, you can:</p>
+
+                <ul>
+                    <li>Open a website with minimal Javascript errors ( ex. <a href = "https://www.avelx.co.uk/" target = "_blank">Avelx.co.uk</a> )</li>
+                    <li>Right click anywhere on the page</li>
+                    <li>Select “Inspect” or “Inspect Element”</li>
+                    <li>Select “Console” tab</li>
+                </ul>
+
+                <p> General Terminology</br>
+                    </br>Encapsulation is grouping data/information together
+                    </br>Nouns and Adjectives translate to <em>properties</em>.
+                    </br>Verbs translate to <em>functions.</em>
+                    </br>Objects can embedded within other objects
+                    </br>Properties are enclosed with braces { }.
+                    </br>A <em>method</em> is a function or subroutine within an object.</br>
+                    </br><em>API</em> ( Application Programming Interface ) is a collection of functions and properties.</p>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- Strings & Values -->
+
+    <div class = "modal" id = "modal3">
+        <div class = "modal-content">
+            <div class = "modal-header">STRINGS & VALUES
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+                
+                <p> A <em>string</em> can be defined using single or double quotes; a semicolon is used to define the end of a string.
+                    </br>To nullify a character, place a backslash before the character you wish to nullify or use the opposite type of quotation mark:</p>
+        
+                <pre>
+                    <code>
+    “She said “hello”” x
+    “She said \”hello\”” ✓
+    “She said ‘hello’ “ ✓
+    ‘She said “hello” ‘ ✓</code>
+                </pre>
+
+                <p> Numbers can be: <em>whole integers</em> ( ex. 1, 50, 200 ) or <em>floating points</em> ( ex. 0.56, 100.71 )
+                    </br><em>Boolean</em> is a data type that presents only two options ( <em>true or false</em> )
+                    </br><em>Null</em> and <em>undefined</em> translate to “empty” or “void” ~ there is no value
+                    </br><em>NaN</em> ( Not a Number ) allows you to learn if a certain type of variable can be inputted into a specific function.</p>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- Variables -->
+
+    <div class = "modal" id = "modal4">
+        <div class = "modal-content">
+            <div class = "modal-header">VARIABLES
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+                
+                 <p> To <em>create</em> a variable:</p>
+
+                <ul>
+                    <li>Type <em>var</em></li>
+                    <li>Type the name you wish to refer to the variable as ( w/out quotes )</li>
+                    <li>Press “=” on the keypad</li>
+                    <li>Assign a string, numeric value, boolean, etc. to the variable</li>
+                    <li>End with a semicolon</li>
+                </ul>
+                
+                <pre>
+                    <code>
+        Ex. var  name = “Henry”;
+            undefined 
+            name 
+            “Henry”</code>
+                </pre>
+                
+                <p> To <em>replace</em> a variable:</p>
+
+                <ul>
+                    <li>Type the name of the variable</li>
+                    <li>Press “=” on the keypad</li>
+                    <li>Assign a new value to the variable</li>
+                    <li>End with a semicolon</li>
+                </ul>
+                
+                <pre>
+                    <code>
+        Ex. var  name = “Henry”;
+            undefined 
+            name
+            “Henry”
+            name = “Sarah”;
+            “Sarah”
+            name
+            “Sarah”</code>
+                </pre>
+
+                <p> To <em>store</em> an unfinished variable:</p>
+
+                <ul>
+                    <li>Type var</li>
+                    <li>Name the variable</li>
+                    <li>Type a semicolon</li>
+                    <li>Press “Enter” on the keypad</li>
+                    <li>When ready to assign, type the name of the variable ( w/out quotes )</li>
+                    <li>Press “=” on the keypad</li>
+                    <li>Assign a value to the variable</li>
+                </ul>
+                
+                <pre>
+                    <code>
+        Ex. var  name;
+            undefined
+            name = “Henry”;
+            “Henry”
+            name
+            “Henry”</code>
+                </pre>
+
+                <p><em>Constants</em>:</p>
+
+                <ul>
+                    <li>Created in the same way as a variable, but type <em>const</em> instead of <em>var</em></li>
+                    <li>Once a value is assigned, it can never be replaced as long as the program is still in progress</li>
+                    <li>Cannot be stored like variables</li>
+                </ul>
+
+                <p> A <em>symbols</em> table is a database that stores all of the symbols/variables that allow you to access values
+                    </br>( located in the window object ) ~ like a giant warehouse</p>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Operators -->
+
+    <div class = "modal" id = "modal5">
+        <div class = "modal-content">
+            <div class = "modal-header">OPERATORS
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+                
+                <p> An <em>operator</em> is a predefined function ( a function defined in the JIT compiler )
+                    </br>Visit this <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target = "_blank">Operator Precedence Website</a> for more information</br></br>
+                    Order of precedence of the arithmetic operators, remember <em>B O DM AS</em>:</p>
+
+                <ul>
+                    <li>Brackets: ( )</li>
+                    <li>pOwers: function call for exponent</li>
+                    <li>Division or Multiplication: / or *</li>
+                    <li>Addition or Subtraction: + or -</li>
+                    <li>Remainder/Modulus: % ( gives you remainder of division problem )</li>
+                </ul>
+
+                <p> Editing a variable value using arithmetic operators:</p>
+
+                <ul>
+                    <li>+= will add the proceeding number to the existing variable value</li>
+                    <li>-= will subtract the proceeding number from the existing variable value</li>
+                    <li>*= will multiply the proceeding number by the existing variable value</li>
+                    <li>/= will divide the proceeding number from the existing variable value</li>
+                    <li>%= will give you the remainder of dividing the proceeding number from the existing variable value</li>
+                    <li>**= will raise the existing variable value to the power of the proceeding number</li>
+                </ul>
+
+                <p> The + can also be used when combining strings:</p>
+
+                <pre>
+                    <code>
+    Ex. “Henry” + “ is nice”
+    “Henry is nice"</code>
+                </pre>
+
+                <p> <em>Polymorphism</em> is an organism or inorganic object or material which takes various forms.</p>
+                
+                <pre>
+                    <code>
+    Ex. “Henry” + 10 + true
+    “Henry10true”</code>
+                </pre>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- Coding -->
+
+    <div class = "modal" id = "modal6">
+        <div class = "modal-content">
+            <div class = "modal-header">CODING
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+
+                <p> In an HTML file, anything written between the <em>script tags</em> ( &lt;script&gt; &lt;/script&gt; ) will be classified as Javascript.
+                    </br></br>Display a string in the console:
+                    </br>In between the script tags, type <em>console.log</em> - Create parenthesis next to the function - 
+                    </br>Within the parenthesis, type the text you wish to display as a string</p>
+
+                <pre>
+                    <code>
+    Ex. &lt;script> console.log( “Hello world” ) &lt;/script></code>
+                </pre>
+
+                <p> You can log out strings, numeric values, variables, boolean, null/undefined, etc.
+                    </br>You can log out multiple values in one line by separating them with commas
+                    </br>But normally, we will just use a separate <em>.js</em> file for our javascript code.
+                    </br>To connect a .js file with a .html file, use this: 
+
+                <pre>
+                    <code>
+    &lt;script src = ”_( file )_”>&lt;/script></em></code>
+                </pre>
+
+                    **Make sure to put this line of code at the end of your code</p>
+            
+            </div>
+        </div>
+    </div>
+
+
+<!-- Functions -->
+
+    <div class = "modal" id = "modal7">
+        <div class = "modal-content">
+            <div class = "modal-header">FUNCTIONS
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+
+                <p> <em>Function</em> or <em>subroutine</em> is task defined by set of instructions that can be run at certain point in time.
+                    </br><em>Execution context</em> is a list of instructions to complete the routine.</br>
+                    </br>To create a function:</p>
+
+                <ul>
+                    <li>Type <em>function</em></li>
+                    <li>Name the function</li>
+                    <li>Create a set of parentheses</li>
+                    <li>Within the parenthesis, define function’s <em>parameters</em> ( variables that can be assigned values )</li>
+                    <li>On the next line, add a pair of curly brackets</li>
+                    <li>Within the curly brackets, begin listing the instructions</li>
+                    <li>If necessary, you can return the instruction by typing <em>return _( variable )_</em></li>
+                </ul>
+
+                <p> </br>To actually invoke the function:</br></p>
+
+                <ul>
+                    <li>Type the name of the function in a separate line</li>
+                    <li>Create a set of parenthesis</li>
+                    <li>Within the parenthesis, type the <em>arguments</em> ( values that you assign to the parameters )</li>
+                    <li>You can also change the arguments of a function in the console itself</li>
+                </ul>
+
+                <pre>
+                    <code>
+    function makeCoffee( sugar, milk ) {
+            var instructions = "Boil water, ";
+            instructions += "pour into cup, ";
+            instructions += "add coffee granules, ";
+            instructions += "add " + sugar + " spoons of sugar, ";
+            instructions += "add " + milk + " % milk.";
+            return instructions
+        }
+        
+     console.log( makeCoffee( 2, 20 ) )</code>
+                </pre>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- Objects & Arrays -->
+
+    <div class = "modal" id = "modal8">
+        <div class = "modal-content">
+            <div class = "modal-header">OBJECTS & ARRAYS
+            <button class = "icon modal-close"><i class = "material-icons">&times;</i></button></div>
+            <div class = "modal-body">
+
+                <p> <em>Objects</em> are obvious :)
+                    </br><em>Arrays are a list of objects</em></br>
+                    </br>To create an object, add a pair of curly brackets. Within the object, you can:
+                    </br>Create a property by adding key name and assigning a value ~ separate properties w/ commas
+                    </br>Create a function or subroutine that you want performed on or by the object</p>
+
+                <pre>
+                    <code>
+    var car = {
+        color: "red",
+        speed: 200,
+        drive: function(){ return "drive"; }
+    };</code>
+                </pre>
+
+                <p> To create an array, add a pair of square brackets.</br>
+                    Within the array, you can create elements; they will automatically be assigned to a number starting from 0 ~ use commas</p>
+
+                <pre>
+                    <code>
+   var shoppinglist = [ "apples", "oranges", "bananas", "grapes" ];
+    OR
+   var shoppinglist = [
+       "apples",
+       "oranges",
+       "bananas",
+       "grapes",
+    ];</code>
+                </pre>
+
+                <p> When embedding a method in an object, assign the function a specific name.
+                    </br>When embedding a method in an array, don’t assign the function a specific name; it will automatically be assigned to a number.
+
+                <pre>
+                    <code>
+    var shoppinglist = {
+        store: "giant",
+        fruit: [ 
+            "apples", 
+            "oranges", 
+            "bananas", 
+            "grapes" ],
+        dairy: [ 
+            "cheese", 
+            {food: "yogurt", 
+            brand: "chobani", 
+            flavor: ["keyLimeCrumble", 
+                    "coconutSnowball", 
+                    "almondCocoLoco"] } ]
+        pay: function(){ return "pay"; }
+    };</code>
+                </pre>
+    
+                    <em>Member</em> Access:
+                    </br>Access a member of an object: type ( _object name_ ).( _member name_ )
+                    </br>Use additional periods to acess members within members</br>
+
+                <pre>
+                    <code>
+    shoppinglist.dairy;
+        "cheese", 
+        {food: "yogurt", 
+        brand: "chobani", 
+        flavor: ["keyLimeCrumble", 
+                 "coconutSnowball", 
+                 "almondCocoLoco"] }
+
+    shoppinglist.pay();
+        "pay"</code>
+                </pre>
+
+                    <em>Computed Member</em> Access:
+                    </br>Access a member of an array: type </p>
+            
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+        <script src = "JS-Notes.js"></script>
+        
+    </footer>
+    
+  </body>
+  
+</html>
