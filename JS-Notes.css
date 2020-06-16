@@ -37,7 +37,7 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(200, 200, 200);
+    color: white;
     text-decoration: underline;
 }
 
@@ -70,20 +70,6 @@ hr {
     padding-top: 15px;
 }
 
-.pic {
-    float: right;
-    height: 225px;
-    border-width: medium;
-    border-style: dotted;
-    margin-right: 50px;
-    padding: 10px;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 15% 15%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    width: 240px;
-}
-
 /* modal */
 
 .modal-open {
@@ -94,7 +80,7 @@ hr {
     padding: 16px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: initial;
     font-size: 16px;
     font-family: Bahnschrift Light;
     transition-duration: all 0.5s;
@@ -104,7 +90,7 @@ hr {
 }
 
 .modal-open:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.25);
     color: white;
 }
 
@@ -156,7 +142,6 @@ hr {
     background-color: rgba(0,0,0,0.3);
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
