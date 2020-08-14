@@ -12,20 +12,23 @@
       
   </head>
   
-  <body>
-            
+  <body> 
+                  
     <h1 class = "heading">JAVASCRIPT</h1>
     <h3 class = "above">NOTES</h3>
+            
     <h5 class = "above">CREATED BY PURVA JANI</h5>
       
-    <hr>
+    <hr>  
+      
+    <div class = "fade">
               
     <p class = "below">Javascript is a computer programming language that enables you to design interactive web pages</p>
     <p class = "heading">The modals below each have different information on the coding language!</p>
     <p class = "heading above"><a href = "https://www.udemy.com/course/javascript-essentials/" target = "_blank">Udemy Course</a></p>  
       
 <!-- Modal Buttons -->
-
+      
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal1"><span>Introduction</span></button>
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal2"><span>Console</span></button>
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal3"><span>Strings & Arrays</span></button>
@@ -35,6 +38,8 @@
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal7"><span>Functions</span></button>
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal8"><span>Objects & Arrays</span></button>
     <button class = "modal-open" style = "vertical-align: middle;" data-modal = "modal9"><span>Member Access</span></button>
+        
+    </div>
 
 <!-- Modals -->
 
@@ -447,13 +452,12 @@
 
                 <pre>
                     <code>
-    shoppinglist.dairy;
-        "cheese", 
-        {food: "yogurt", 
-        brand: "chobani", 
-        flavor: ["keyLimeCrumble", 
-                 "coconutSnowball", 
-                 "almondCocoLoco"] }
+    shoppinglist.fruit;
+        (4) ["apples", "oranges", "bananas", "grapes"]
+            0: "apples"
+            1: "oranges"
+            2: "bananas"
+            3: "grapes"
 
     shoppinglist.pay();
         "pay"</code>
@@ -461,6 +465,29 @@
 
                     <p><em>Computed Member</em> Access:
                     <br>Access a member of an array: type _array name_[ member number ]</p>
+                
+                <pre>
+                    <code>
+    shoppinglist.dairy[1];
+        {food: "yogurt", brand: "chobani", flavor: Array(3)}
+            brand: "chobani"
+            flavor: Array(3)
+                0: "keyLimeCrumble"
+                1: "coconutSnowball"
+                2: "almondCocoLoco"
+            food: "yogurt"</code>
+                </pre>
+                
+                    <p>Thorough example of member access:</p>
+                
+                <pre>
+                    <code>
+    shoppinglist.dairy[1].flavor;
+        (3) ["keyLimeCrumble", "coconutSnowball", "almondCocoLoco"]
+            0: "keyLimeCrumble"
+            1: "coconutSnowball"
+            2: "almondCocoLoco"</code>
+                </pre>
             
             </div>
         </div>
