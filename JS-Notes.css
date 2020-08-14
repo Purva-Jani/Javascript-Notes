@@ -9,10 +9,8 @@ body {
     font-family: Bahnschrift Light;
     color: white;
     text-align: left;
-    opacity: 1;
-    transition: 1s opacity;
-    padding-bottom: 324px;
-    backdrop-filter: brightness(90%);
+    padding-bottom: 286px;
+    backdrop-filter: brightness(80%);
 }
 
 body.fade-out {
@@ -74,6 +72,7 @@ hr {
 
 .modal-open {
     background-color: rgba(0,0,0,0);
+    vertical-align: middle;
     border: none;
     outline: none;
     color: white;
@@ -196,4 +195,17 @@ hr {
 
 .modal-body {
     padding: 2px 16px;
+}
+
+/* fade in */
+
+.fade {
+text-transform: none;
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
